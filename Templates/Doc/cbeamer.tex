@@ -1,0 +1,163 @@
+%# -*- coding: utf-8 -*-
+\documentclass[12pt,hyperref={bookmarks=false},notheorems]{beamer}
+\usepackage{beamerthemesplit}
+\usepackage{amsmath,mathrsfs,amscd,graphicx}
+%\usetheme{CambridgeUS}
+\usetheme{Antibes}
+%\usecolortheme{sidebartab}
+\usefonttheme{structurebold}
+\setbeamercovered{dynamic}
+ \setbeamertemplate{theorems}[numbered]
+ \setbeamertemplate{blocks}[rounded]
+  \let\WriteBookmarks\relax
+\usepackage[UTF8]{ctex}
+\usepackage{ccmap}
+  \DeclareMathOperator{\RE}{Re}
+ \DeclareMathOperator{\IM}{Im}
+ \DeclareMathOperator{\Ind}{Ind}
+ \DeclareMathOperator{\Bd}{Bd}
+ \DeclareMathOperator{\Id}{Id}
+ \DeclareMathOperator{\DIV}{div}
+  \DeclareMathOperator{\grad}{grad}
+ \DeclareMathOperator{\trace}{tr}
+ \newcommand{\me}{\mathrm{e}}
+ \newcommand{\mi}{\mathrm{i}}
+ \newcommand{\mj}{\mathrm{j}}
+ \newcommand{\mk}{\mathrm{k}}
+ \newcommand{\dif}{\mathrm{d}}
+ \newcommand{\R}{\mathbb{R}}
+ \newcommand{\ROM}[1]{\mathrm{\uppercase\expandafter{\romannumeral#1}}}
+\theoremstyle{definition}
+ \newtheorem{theorem}{\CJKfamily{hei} 定理}
+ \newtheorem{lemma}{\CJKfamily{hei} 引理}
+ \newtheorem{definition}{\CJKfamily{hei} 定义}
+ \newtheorem{corollary}{\CJKfamily{hei} 推论}
+  \newtheorem{example}{\CJKfamily{hei} 例}
+ \newtheorem{ramark}{\CJKfamily{hei} 注记}
+ \newtheorem{proposition}{\CJKfamily{hei} 命题}
+ \renewcommand{\proofname}{\CJKfamily{hei} 证明}
+    \title[]{
+    \LARGE }
+    \author{\bf a}
+    \institute[a]{\bf a，太原\ 030000\\\vspace{2mm}
+    \texttt{email:{\href{mailto:a@163.com}
+        {a@163.com}}}}
+    \date[]{}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+  \section*{目录}
+\begin{frame}{}
+    \tableofcontents
+\end{frame}
+    \section*{}
+      \subsection*{}
+\begin{frame}[allowframebreaks]{}	
+      \begin{block}{}
+    
+      \end{block}
+\end{frame}
+%%%%%%%%=================================================================
+\section{}
+\begin{frame}[allowframebreaks]{}
+        
+\end{frame}
+\section{Introduction}
+    \subsection{Overview of the Beamer Class}
+\begin{frame}{Features of the Beamer Class}
+
+      \begin{itemize}
+      \item<1-> Normal LaTeX class.
+      \item<2-> Easy overlays.
+      \item<3-> No external programs needed.
+      \end{itemize}
+\end{frame}
+%%%%------------------------------------------------------------------
+\subsection{Test}
+\begin{frame}{Test}
+
+  \begin{theorem}
+    Let $\mathcal S$ be a logical structure with universe~$U$ and let
+    $A \subseteq U$. If
+
+    \begin{enumerate}
+    \item
+      $\mathcal S$ is well-orderable,
+    \item
+      every finite relation on~$U$ is elementarily definable
+      in~$\mathcal S$, and
+    \item
+      \alert{$\#_{\!A}^n$} is elementarily \alert{$n$}-enumerable in~$\mathcal S$ via a
+      relation that \alert{never `enumerates' both $0$ and~$n$},
+    \end{enumerate}
+
+    then \alert{$A$ is elementarily definable} in~$\mathcal S$.
+  \end{theorem}
+    \begin{overprint}
+    \onslide<2>
+      \begin{corollary}
+        If $\chi_A^n$ is $n$-enumerable by a finite automaton, then
+        $A$ is regular.
+      \end{corollary}
+
+    \onslide<3>
+      \begin{corollary}[with more effort]
+        If $\chi_A^n$ is $n$-enumerable by a Turing machine, then $A$
+        is recursive.
+      \end{corollary}
+  \end{overprint}
+\end{frame}
+
+ %%%%%%%------------------------------------------------------------
+\begin{frame}{How Well Can the Cardinality Function Be Enumerated?}
+
+ \begin{block}{Observation}
+    For fixed~$n$, the cardinality function $\#_{\!A}^n$
+    \begin{itemize}
+    \item
+      can be \alert{$1$}-enumerated by Turing machines only for \alert{recursive}~$A$,~but\hskip-0.5cm\hbox{}
+    \item
+      can be \alert{$(n+1)$}-enumerated for \alert{every} language~$A$.
+    \end{itemize}
+  \end{block}
+
+  \begin{alertblock}{Question}<2->
+    What about $2$-, $3$-, $4$-, \dots, $n$-enumerability?
+  \end{alertblock}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\begin{frame}{Why?}
+
+  \begin{block}{First Explanation}<1>
+    The weak cardinality theorems hold both for recursion and automata
+    theory \alert{by coincidence}.
+  \end{block}
+
+  \begin{block}{Second Explanation}<1-2>
+    The weak cardinality theorems hold both for
+    recursion and automata theory, \alert{because they are
+      instantiations of\\ single, unifying theorems}.
+  \end{block}
+
+  \vskip1em
+  \visible<2->{
+    The second explanation is correct.\\
+    The theorems can (almost) be unified using first-order logic.
+    }
+\end{frame}
+\section{参考文献}
+\begin{frame}[allowframebreaks]{参考文献}
+  \begin{thebibliography}
+  {888}
+  \bibitem{A} A. D. Alexandrov, \textit{Uniqueness theorems for
+surfaces in the large I}, Vestnik Leningrad Univ., \textbf{11}(1956), 5-17.
+
+ \end{thebibliography}
+\end{frame}
+\begin{frame}
+  \begin{center}
+  \Huge\CJKfamily{hei} 谢谢大家!
+  \end{center}
+\end{frame}
+\end{document}

@@ -1,0 +1,219 @@
+%# -*- coding: utf-8 -*-
+% ----------------------------------------------------------------
+% Article Class (This is a LaTeX2e document)  ********************
+% ----------------------------------------------------------------
+\documentclass[12pt,twocolumn,UTF8]{ctexart}
+ \usepackage{amsmath,amssymb,latexsym,amscd,upgreek,cmap,amsfonts,lastpage,fancyhdr}
+  \usepackage [paper=a3paper, left=1cm, columnsep=1cm, landscape=true]{geometry}
+  \setlength\paperheight {297mm}%
+\setlength\paperwidth  {420mm}
+\setlength{\topmargin}{-1true cm}
+\setlength{\headsep}{0.1true cm}
+\setlength{\oddsidemargin}{2true cm}
+ \setlength{\parskip}{3pt plus1pt minus2pt}
+ \setlength{\baselineskip}{20pt plus2pt minus1pt}
+ \setlength{\textheight}{24.8true cm}
+ \setlength{\textwidth}{35.6true cm}
+ \renewcommand{\baselinestretch}{1.5}
+ \newcommand{\kskm}{\songti 2010级教育心理学《高等数学B3》试卷A}
+ \newcommand{\ldotfill}{\leavevmode\xleaders\hbox{\rule{2pt}{0.5pt}\ }\hfill\null}
+ \newsavebox{\zdx}
+\sbox{\zdx}
+	{\parbox{26.65true cm}{
+	\centering \large\songti
+科~目: \underline{\makebox[42mm][c]{}}\qquad 专~业: \underline{\makebox[42mm][c]{}}\qquad ~学~号: \underline{\makebox[42mm][c]{}}\qquad
+~~~姓~名: \underline{\makebox[42mm][c]{}}
+
+\vspace{2mm}
+\ldotfill{}\raisebox{-1.5mm}{密}\ldotfill{}\raisebox{-1.5mm}{封}\ldotfill{}\raisebox{-1.5mm}{线}\ldotfill{}
+}}
+
+ \newsavebox{\ybx}
+\sbox{\ybx}
+	{\parbox{26.65true cm}{
+	\centering \large
+\ldotfill}}
+\newsavebox{\sbx}
+\sbox{\sbx}
+	{\parbox{37.5true cm}{
+	\centering \large
+\ldotfill
+}}
+
+\pagestyle{fancy}
+%\fancyhead{}
+\fancyhf{}%
+\fancyhead[C]{\setlength{\unitlength}{1in}
+              \begin{picture}(0,0)
+\put(0,0.5){\makebox(0,0)[t]{\kskm}}
+\put(-8.12,-4.95){\rotatebox[origin=c]{90}{
+\usebox{\zdx}
+}}
+\put(-7.5,0.25){\usebox{\sbx}}
+              \end{picture}}
+
+\fancyfoot[C]{\setlength{\unitlength}{1in}
+              \begin{picture}(0,0)
+\put(7.2,5.3){\rotatebox[origin=c]{90}{
+\usebox{\ybx}
+}}
+\put(0,5.3){\rotatebox[origin=c]{90}{
+\usebox{\ybx}
+}}
+\put(-7.5,0){\usebox{\sbx}}
+\put(0,-0.05){\makebox(0,0)[t]{\songti 共\,\pageref{LastPage}\,页\ \ \ 第\,\thepage\,页}}
+              \end{picture}}
+\renewcommand{\headrulewidth}{0pt}
+
+ \DeclareMathOperator{\RE}{Re}
+ \DeclareMathOperator{\IM}{Im}
+ \DeclareMathOperator{\Ind}{Ind}
+ \DeclareMathOperator{\Bd}{Bd}
+ \DeclareMathOperator{\Id}{Id}
+ \newcommand{\me}{\mathrm{e}}
+ \newcommand{\mi}{\mathrm{i}}
+ \newcommand{\mj}{\mathrm{j}}
+ \newcommand{\mk}{\mathrm{k}}
+ \newcommand{\dif}{\mathrm{d}}
+ \newcommand{\ROM}[1]{\mathrm{\uppercase\expandafter{\romannumeral#1}}}
+  \newcommand\dfpjr{$\begin{array}{|c|c|}
+  \hline
+  \mbox{得分} & \mbox{评卷人}\\
+  \hline \empty & \empty \\
+  \hline
+\end{array}$}
+  \newcommand\defen{$\begin{array}{|c|c|}
+  \hline
+  \mbox{得分} & ~~~~~~~~\\
+  \hline
+\end{array}$\quad}
+
+\def\kge#1{\,\raisebox{-2pt}{\rule{#1}{0.4pt}}\,}
+
+% ----------------------------------------------------------------
+\begin{document}
+\CTEXnoindent
+\zihao{-4}
+\vspace*{-1true cm}{\large 考试科目: \kskm}
+
+   \vspace*{3mm} \parbox{200mm}{\large
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+    % after \\:\hline or \cline{col1-col2} \cline{col3-col4} ...
+    \hline
+    题~号 & \makebox[8.5mm][c]{一} & \makebox[8.5mm][c]{二} & \makebox[8.5mm][c]{三} &
+    \makebox[8.5mm][c]{四} & \makebox[8.5mm][c]{五} & \makebox[8.5mm][c]{六} &
+    \makebox[8.5mm][c]{七} & \makebox[8.5mm][c]{八} & \makebox[8.5mm][c]{九} &
+    \makebox[8.5mm][c]{十} & ~总~分\\
+    \hline
+    得~分 &  &  &  &  &  &  &  &  &  &  &    \\  \hline
+    \end{tabular}
+    }
+   \begin{center}
+(本试卷共9个题, 满分为100分)
+\end{center}
+\defen 1. (每小题3分, 共15分) 填空题
+
+(1) 设5阶方阵 $A=[\alpha_1, \alpha_2, \alpha_3, \alpha_4, \alpha_5], B=[\beta_1, \alpha_2, \alpha_3, \alpha_4, \alpha_5]$, 且 $|A|=3, |B|=-5$, 则  $|A+B|=$ \underline{~~~~~~~~~~~~~~~~}.
+
+(2) 设 $A=\left[%
+\begin{array}{ccc}
+  2 & 0 & 0 \\
+  0 & 3 & 1 \\
+  0 & 1 & x \\
+\end{array}%
+\right]$ 与 $B=\left[%
+\begin{array}{ccc}
+  4 & 0 & 0 \\
+  0 & 2 & 0 \\
+  0 & 0 & 2 \\
+\end{array}%
+\right]$ 相似, 则 $x=$ \underline{~~~~~~~~~~~~~~~~}.
+
+(3) 设 $\varepsilon_1$, $\varepsilon_2$ 是空间 $V$ 的一组基, 则由 $\varepsilon_1-\varepsilon_2$, $\varepsilon_1+\varepsilon_2$ 到 $\varepsilon_1$, $\varepsilon_2$ 的过渡矩阵为 \underline{~~~~~~~~~~~~~~~~~~}.
+
+
+(4) 设 $X$ 表示10次独立重复射击命中目标的次数, 每次射中目标的概率为0.7,则 $E(X)=$
+ \underline{~~~~~~~~~~~~~~~~}.
+
+(5) 设随机变量 $X\sim N(3,2^2)$, $\phi(0.5)=0.6915$,
+$\phi(1)=0.8413$, 则 $P\{2<X\leq 5\}=$ \underline{~~~~~~~~~~~~~~~~~~}.
+
+\medskip
+\defen 2. (每小题3分, 共15分) 单项选择题
+
+(1) 设 $P$, $Q$ 均为 $n$ 阶初等矩阵, 下列结论错误的是 (~~~~).
+
+A. $PQ$ 为可逆矩阵;\
+B. $PQ$ 必为对称矩阵;\  C. $P+Q$ 不一定是初等矩阵;\  D. $\mbox{秩}(P)=\mbox{秩}(Q)$.
+
+(2) 下列各向量线性相关的是 (~~~~).
+
+A. $\alpha_1=(0, 0, 1)$, $\alpha_2=(1, 0, 0)$, $\alpha_3=(0, 1, 0)$;\
+B. $\alpha_1=(1, 2, 1)$, $\alpha_2=(2, 4, 3)$;
+
+C. $\alpha_1=(1, 0, 1)$, $\alpha_2=(2, 1, 4)$, $\alpha_3=(3, 4, 4)$;\
+D. $\alpha_1=(1, 2, 3)$, $\alpha_2=(4, 5, 6)$, $\alpha_3=(7, 8, 9)$.
+
+(3) 设二次型 $f(x_1, x_2, x_3)=2x_1^2+8x_2^2+x_3^2+2ax_1x_2+2x_1x_3$ 是正定的, 则实数 $a$ 的取值范围是 (~~~~).
+
+A. $a<8$;\quad B. $a>4$;\quad
+C. $a<-4$; \quad D. $-4<a<4$.
+
+(4) 设随机变量 $X$ 和 $Y$ 相互独立, 且均在 $(0, \theta)$ 上服从均匀分布, 则 $E[\min(X, Y)]=$ (~~~~).
+
+A. $\dfrac{\theta}{2}$;\quad B. $\theta$;\quad C. $\dfrac{\theta}{3}$;\quad D. $\dfrac{\theta}{4}$.
+
+(5) 对于两个随机变量 $X$, $Y$, 若 $E(XY)=E(X)E(Y)$, 则 (~~~~).
+
+A. $D(XY)=D(X)D(Y)$;\quad B. $D(X+Y)=D(X)+D(Y)$;\quad C. $X$ 和 $Y$ 互不相容;\quad D. $X$ 和 $Y$ 相互独立.
+
+\defen  3. (8分) 计算行列式
+$\left|%
+\begin{array}{cccccc}
+  a_1 & 0 & 0 & \cdots & 0 & 1 \\
+  0 & a_2 & 0 & \cdots & 0 & 0 \\
+  0 & 0 & a_3 & \cdots & 0 & 0 \\
+  \vdots & \vdots & \vdots & & \vdots & \vdots\\
+  0 & 0 & 0 & \cdots & a_{n-1} & 0 \\
+  1 & 0 & 0 & \cdots & 0 & a_n \\
+\end{array}%
+\right|$
+
+\vskip 10mm\defen  4. (12分) 当 $a$, $b$ 取何值时, 方程组
+$$\left\{\begin{array}{l}
+x_1+x_2+x_3=1,\\
+x_1-x_2+2x_3=a,\\
+3x_1+5x_2+bx_3=6
+\end{array}
+\right.$$
+(1) 无解? (2) 有唯一解? (3) 有无穷多个解? 并在有无穷解时, 求出通解.
+
+\vskip 10mm \defen 5. (8分) 试求出 $\mathbb R^4$ 的一个基, 使得这个基包含两个线性无关的向量
+$\mathbf x_1=[1, 2, 3, 0]$ 和 $\mathbf x_2=[2, 4, 1, 2]$.
+
+ \vskip 10mm\defen 6. (15分) 设 $A=\left[%
+\begin{array}{rrr}
+  3 & 2 & 0 \\
+  2 & 4 & -2 \\
+  0 & -2 & 5 \\
+\end{array}%
+\right]$, 求正交矩阵 $P$, 使得 $P^{-1}AP$ 是对角矩阵.
+
+\vskip 10mm\defen 7. (12分) 设随机变量 $(X,Y)$ 的概率密度为
+$$f(x,y)=\left\{\begin{array}{lcl}
+cx^2y, & \quad & 0<x<1, 0<y<1\\
+0, & \quad & \mbox{其他}\end{array}\right.$$ 求 (1) 常数 $c$; (2)
+$P\{Y\leq 2X\}$; (3) 求边缘概率密度.
+
+\vskip 10mm\defen  8. (8分) 设随机变量 $X$ 服从指数分布, 其概率密度为
+$$f(x)=\begin{cases}
+\dfrac{1}{\theta}e^{-x/\theta}, & x>0,\\
+0, & \mbox{其他},
+\end{cases}$$
+其中 $\theta>0$. 求 $E(X), D(X)$.
+
+
+\vskip 10mm\defen  9. (7分)
+设 $A$ 是正定矩阵, 证明 $A$ 的对角线上的元素都大于零.
+\end{document}
+% ----------------------------------------------------------------

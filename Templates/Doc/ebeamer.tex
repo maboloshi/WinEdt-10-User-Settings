@@ -1,0 +1,111 @@
+\documentclass[hyperref={bookmarks=false}]{beamer}
+\usetheme{Warsaw}
+\usefonttheme{structurebold}
+\setbeamercovered{dynamic}
+ \setbeamertemplate{theorems}[numbered]
+  \let\WriteBookmarks\relax
+
+\begin{document}
+%%%%========================================================================
+%%Title
+    \title[]{}
+    \author{}
+    \institute{\\
+    \\\vspace{2mm}
+    \texttt{email:{\href{mailto:}
+        {}}}}
+    \date{\today}
+
+\begin{frame}
+\titlepage
+\end{frame}
+%%%%%========================================================================
+    \section*{Outline}
+\begin{frame}
+    \tableofcontents
+\end{frame}
+%%%%%========================================================================
+    \section{Introduction}
+    \subsection{Overview of the Beamer Class}
+\begin{frame}{Features of the Beamer Class}
+
+      \begin{itemize}
+      \item<1-> Normal LaTeX class.
+      \item<2-> Easy overlays.
+      \item<3-> No external programs needed.
+      \end{itemize}
+\end{frame}
+%%%%------------------------------------------------------------------
+\subsection{Test}
+\begin{frame}{Test}
+
+  \begin{theorem}
+    Let $\mathcal S$ be a logical structure with universe~$U$ and let
+    $A \subseteq U$. If
+
+    \begin{enumerate}
+    \item
+      $\mathcal S$ is well-orderable,
+    \item
+      every finite relation on~$U$ is elementarily definable
+      in~$\mathcal S$, and
+    \item
+      \alert{$\#_{\!A}^n$} is elementarily \alert{$n$}-enumerable in~$\mathcal S$ via a
+      relation that \alert{never `enumerates' both $0$ and~$n$},
+    \end{enumerate}
+
+    then \alert{$A$ is elementarily definable} in~$\mathcal S$.
+  \end{theorem}
+    \begin{overprint}
+    \onslide<2>
+      \begin{corollary}
+        If $\chi_A^n$ is $n$-enumerable by a finite automaton, then
+        $A$ is regular.
+      \end{corollary}
+
+    \onslide<3>
+      \begin{corollary}[with more effort]
+        If $\chi_A^n$ is $n$-enumerable by a Turing machine, then $A$
+        is recursive.
+      \end{corollary}
+  \end{overprint}
+\end{frame}
+
+ %%%%%%%------------------------------------------------------------
+\begin{frame}{How Well Can the Cardinality Function Be Enumerated?}
+
+ \begin{block}{Observation}
+    For fixed~$n$, the cardinality function $\#_{\!A}^n$
+    \begin{itemize}
+    \item
+      can be \alert{$1$}-enumerated by Turing machines only for \alert{recursive}~$A$,~but\hskip-0.5cm\hbox{}
+    \item
+      can be \alert{$(n+1)$}-enumerated for \alert{every} language~$A$.
+    \end{itemize}
+  \end{block}
+
+  \begin{alertblock}{Question}<2->
+    What about $2$-, $3$-, $4$-, \dots, $n$-enumerability?
+  \end{alertblock}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\begin{frame}{Why?}
+
+  \begin{block}{First Explanation}<1>
+    The weak cardinality theorems hold both for recursion and automata
+    theory \alert{by coincidence}.
+  \end{block}
+
+  \begin{block}{Second Explanation}<1-2>
+    The weak cardinality theorems hold both for
+    recursion and automata theory, \alert{because they are
+      instantiations of\\ single, unifying theorems}.
+  \end{block}
+
+  \vskip1em
+  \visible<2->{
+    The second explanation is correct.\\
+    The theorems can (almost) be unified using first-order logic.
+    }
+\end{frame}
+\end{document}

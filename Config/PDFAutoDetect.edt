@@ -1,0 +1,18 @@
+// PDF Auto Detection Data
+
+  Assign(!"PDFAuto-View", !"0");
+  Assign(!"PDF-View","""%b\Plugins\SumatraPDF\SumatraPDF.exe""");
+  Assign(!"PDF-ViewDef",!"""%b\Plugins\SumatraPDF\SumatraPDF.exe""");
+
+
+  Assign(!"PDF-View1",!"""%!H\SumatraPDF\SumatraPDF.exe""");
+  Assign(!"PDF-View2",!"""%!H\Tracker Software\PDF Editor\PDFXEdit.exe""");
+  Assign(!"PDF-View3",!"""%!H\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe""");
+  Assign(!"PDF-View4",!"""%b\Plugins\SumatraPDF\SumatraPDF.exe""");
+
+
+  Assign(!"PDF-SyncTeX", !"1");
+  Assign(!"PDF-Sync",!"--synctex=-1");
+  Assign(!"PDF-SyncEx",!".synctex");
+
+End;

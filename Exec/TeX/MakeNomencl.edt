@@ -1,0 +1,23 @@
+// -*- ASCII:EDT -*-
+// TeX: MakeNomencl ...
+
+  Requires(20080326); // Requires this build of WinEdt to work properly
+
+  PushTagsandRegisters;
+  Assign('ExitCode-OK','0'); // OK Exit Code
+  LetReg(9,'MakeNomencl'); // Execution Modes Compiler
+  LetReg(8,'ilg');       // Log File (or empty)
+  LetReg(7,'nls');       // Output Format
+  LetReg(6,'%O');        // Startup Folder
+  // Requires Custom Command Line ...
+  // Display a Dialog for Extra Switches:
+  IfStr("%$('%!9-GUI');","1","=",>
+    !|GetString("Switches: ","%!9 Switches","%$('%!9--Switches');");>
+      IfOK(!`Assign('%!9--Switches','%!?');`,!`PopTagsandRegisters;Exit;`);|,>
+    !|Release('%!9--Switches');|);
+  LetReg(5, "%$('%!9-Executable'); %$('%!9-Switches'); %$('%!9--Switches'); %$('%!9-Parameters');");
+  // Use Execution Modes to determine the flow of execution...
+  Exe('%b\Exec\ExeCompiler.edt');
+  PopTagsandRegisters;
+
+End;

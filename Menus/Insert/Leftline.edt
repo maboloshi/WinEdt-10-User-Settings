@@ -1,0 +1,7 @@
+// leftline
+
+  IfisMode('TeX;BibTeX','%!m',!'InsLabel("\leftline","{","}");Exit;');
+  //IfisMode('HTML;XML;PHP','%!m',!'InsLabel("","<b>","</b>");Exit;');
+  InsLabel("\leftline","{","}");
+
+End;

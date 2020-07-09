@@ -1,0 +1,20 @@
+# Specify filepatterns you want git to ignore.
+Thumbs.db
+*.log
+Temp
+*Update*
+*Upgrade*
+*.mui
+*.dic
+*.sublime-workspace
+*.prj*
+*.dnt*
+sed.exe
+delskd.bat
+Config/Exit.edt
+Uninstall
+ExeModeAutoDetect.edt
+Config.edt
+Plugins/sumatrapdf/SumatraPDF-settings.txt
+Plugins/sumatrapdf/sumatrapdfcache/
+Plugins/sumatrapdf/symbols

@@ -1,0 +1,30 @@
+// Listing.edt
+// ======================
+// Parse %? or %!? for the Caption
+// =================================
+
+    PushTagsandRegisters;
+
+    IfStr('%$("GatherType");','Input','=',>
+      !'LetReg(0,"%!?");',!'LetReg(0,"%?");');
+    // Replace the last tagged wildcard "*" with "@{{\{*\}}|^\}}"
+    // if you need even deeper nesting of braces in the caption...
+    LetReg(3,!"\[*caption@{ }=@{ }{{\{@{ }\[\(0*\)\]*\]}|"+>
+        "{\{\(1@{{\{@{{\{@{{\{*\}}|^\}}*\}}|^\}}*\}}|^\}}*\)\}*\]}|"+>
+        "{\(2*\){,|\]}}}");
+    FindInString("%!0","%!3",1,2,11);
+    IfOK(!'Relax;',>
+      !'IfStr(`%$("GatherType");`,`Input`,`=`,>
+          !`LetReg(-10,"%?");`,!`LetReg(-10,"(untitled)");`);>
+        PopTagsandRegisters;Exit;');
+    IfStr('%#0','',!'<>',>
+      !'LetReg(0,"%#0");',>
+      !'IfStr(`%#1`,``,!`<>`,>
+          !`LetReg(0,"%#1");`,>
+          !`LetReg(0,"%#2");`);');
+    FormatString("%!0",0,"trimboth");
+    LetReg(-10,"%!0");
+
+    PopTagsandRegisters;
+
+End;

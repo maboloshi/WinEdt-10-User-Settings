@@ -1,0 +1,22 @@
+// ListingLabel.edt
+// ======================
+// Parse %? or %!? for the Label
+// =================================
+
+    PushTagsandRegisters;
+
+    IfStr('%$("GatherType");','Input','=',>
+      !'LetReg(0,"%!?");',!'LetReg(0,"%?");');
+    LetReg(3,!"\[*label@{ }=@{ }@{\{@{ }\(0*\)\}}\(1*\){,|\]}");
+    FindInString("%!0","%!3",1,2,11);
+    IfOK(!'Relax;',!'LetReg(-10,"");PopTagsandRegisters;Exit;');
+    IfStr('%#0','',!'<>',>
+      !'LetReg(0,"%#0");',>
+      !'LetReg(0,"%#1");');
+    FormatString("%!0",0,"trimboth");
+    LetReg(-10,"%!0");
+    LetTempReg("%!0");
+
+    PopTagsandRegisters;
+
+End;

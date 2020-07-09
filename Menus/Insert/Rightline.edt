@@ -1,0 +1,7 @@
+// rightline
+
+  IfisMode('TeX;BibTeX','%!m',!'InsLabel("\rightline","{","}");Exit;');
+  //IfisMode('HTML;XML;PHP','%!m',!'InsLabel("","<b>","</b>");Exit;');
+  InsLabel("\rightline","{","}");
+
+End;

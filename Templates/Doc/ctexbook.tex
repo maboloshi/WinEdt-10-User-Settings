@@ -1,0 +1,59 @@
+%# -*- coding: utf-8 -*-
+% ----------------------------------------------------------------
+% Book Class (This is a LaTeX2e document)  ***********************
+% ----------------------------------------------------------------
+\documentclass[12pt,UTF8]{ctexbook}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+% THEOREMS -------------------------------------------------------
+\setlength{\parindent}{2em}
+ \setlength{\parskip}{3pt plus1pt minus2pt}
+ \setlength{\baselineskip}{20pt plus2pt minus1pt}
+ \setlength{\textheight}{21.5true cm}
+ \setlength{\textwidth}{14.5true cm}
+  \setlength{\headsep}{10truemm}
+ %\setlength{\jot}{4.5pt}
+ \renewcommand{\baselinestretch}{1.2}
+
+ \DeclareMathOperator{\RE}{Re}
+ \DeclareMathOperator{\IM}{Im}
+ \DeclareMathOperator{\Ind}{Ind}
+ \DeclareMathOperator{\Bd}{Bd}
+ \DeclareMathOperator{\Id}{Id}
+ \newcommand{\me}{\mathrm{e}}
+ \newcommand{\mi}{\mathrm{i}}
+ \newcommand{\mj}{\mathrm{j}}
+ \newcommand{\mk}{\mathrm{k}}
+ \newcommand{\dif}{\mathrm{d}}
+ \newcommand{\ROM}[1]{\mathrm{\uppercase\expandafter{\romannumeral#1}}}
+% THEOREMS -------------------------------------------------------
+\renewcommand{\proofname}{\CJKfamily{hei} 证明}
+ \theoremstyle{definition}
+ \newtheorem{theorem}{\CJKfamily{hei} 定理}[chapter]
+ \newtheorem{lemma}[theorem]{\CJKfamily{hei} 引理}
+ \newtheorem{definition}[theorem]{\CJKfamily{hei} 定义}
+ \newtheorem{corollary}[theorem]{\CJKfamily{hei} 推论}
+  \newtheorem{example}{\CJKfamily{hei} 例}
+ \newtheorem{remark}[theorem]{\CJKfamily{hei} 注记}
+ \newtheorem{proposition}[theorem]{\CJKfamily{hei} 命题}
+  \makeatletter
+\renewcommand \thesection {\S\thechapter.\@arabic\c@section}
+\renewcommand \thetheorem {\thechapter.\@arabic\c@theorem}
+\makeatother
+% ----------------------------------------------------------------
+\begin{document}
+\title{}%
+\author{}%
+\date{}%
+\maketitle
+\tableofcontents
+%\part{}
+
+\chapter{}
+
+\section{}
+
+
+
+\end{document}
+% ----------------------------------------------------------------
