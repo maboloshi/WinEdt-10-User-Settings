@@ -1,5 +1,7 @@
 ## WinEdt10.3 个性化设置
 
+![截图](https://github.com/maboloshi/WinEdt-10-User-Settings/raw/shots/shots/WinEdt_10_%E6%B1%89%E5%8C%96%E8%8F%9C%E5%8D%95.gif)
+
 ### 功能简介
 #### 相对于默认设置:
 
@@ -51,5 +53,5 @@
 接上述, 切换至`Diagnosis`选项卡, 点击底下的`Diagnose the System`, 查看自动检测生成的报告. 相关二进制工具是否找到, 相关缺失的工具是否对你有影响.
 
 ### 其他设置
-## 文件类型关联
+#### 文件类型关联
 菜单栏`选项`-->`设置向导`, 在弹出的对话框中选择`Filetype Associations`选项卡, 点击`Modify filetype associations..`, 然后根据需要进行文件类型关联.
