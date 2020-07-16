@@ -13,7 +13,7 @@ sed.exe
 delskd.bat
 Config/Exit.edt
 Uninstall
-ExeModeAutoDetect.edt
+ExeMode*.edt
 Config.edt
 Plugins/sumatrapdf/SumatraPDF-settings.txt
 Plugins/sumatrapdf/sumatrapdfcache/
