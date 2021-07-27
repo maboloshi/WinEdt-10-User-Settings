@@ -34,6 +34,7 @@
     AddFileItem(1,"LOF Files","*.lof","TeX");
     AddFileItem(1,"LOT Files","*.lot","TeX");
     AddFileItem(1,"TOC Files","*.toc","TeX");
+    AddFileItem(1,"NLS Files","*.nls","TeX");
     AddFileItem(1,"OUT Files","*.out","TeX");
 
     AddFileItem(1,"MPX Files","*.mpx","MetaPost");
@@ -51,5 +52,12 @@
     AddFileItem(1,"CTEXTEMP Files","ctextemp_*.*","");
 
     EraseWorkingFiles("%P;%O","Erase Output Files",0,0);
+
+// MarkDown Package
+    AddFileItem(1,"NAV Files","*.nav","TeX");
+    AddFileItem(1,"ATFI Files","*.atfi","TeX");
+    AddFileItem(1,"CPC Files","*.cpc","TeX");
+    AddFileItem(1,"markdown.in Files","*.markdown.in","TeX");
+    AddFileItem(1,"markdown.lua Files","*.markdown.lua","TeX");
 
 End;
